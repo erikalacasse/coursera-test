@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Restaurant Menu</title>
+<style>
+********** BASE STYLES ********
+*{
+    box-sizing: padding-box;
+}
+h1 {
+    margin-bottom: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+p {
+    padding: 6% 2% 2% 2%;
+    color: black;
+
+}
+section {
+    float: left;
+    border: 1px solid black;
+    background-color: rgb(169, 226, 243);
+    padding: 2%;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size:14px;
+}
+
+h2 {
+    border: 1px solid black;
+    background-color: blue;
+    float: right;
+    width: 30%;
+    height: 14%;
+    position: relative;
+    bottom: 6%;
+    right: -2.5%;
+    font-size: 16px;
+    text-align: center;
+    clear: both;
+    margin: 0px;
+}
+
+#chicken {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+#beef {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+#sushi{
+    background-color: rgb(114, 114, 114);
+    color: white;
+}
+
+    /***** Simple Responsive Framework. */
+.row {
+    width: 100%;
+}
+
+/*********** Desktop Device Only *********/
+@media (min-width: 992px) {
+  .col-desk-1 {
+    float: left;
+    width: 33.33%;
+
+}}
+
+
+/*********** Tablet View Only *********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-tablet-1 { 
+        float: left;
+        width: 45%;
+        margin-right: 2.5%;
+        margin-left: 2.5%; 
+
+    }
+    .col-tablet-2 {
+        float: left;
+        width: 100%;
+    }
+    #sushi {
+        bottom: 12%;
+    }
+}
+ 
+/*********** Mobile View Only *********/
+@media (max-width: 767px) {
+    .col-mobile-1 {
+        float: left;
+        width: 95%;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+}
+}
+
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+
+<div class="row">
+    <div class="col-desk-1 col-tablet-1 col-mobile-1">
+        <section><h2 id="chicken"> Chicken</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dicta beatae voluptatibus veniam placeat 
+            iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, 
+            provident a ea!
+            </p>
+        
+        </section></div>
+    <div class="col-desk-1 col-tablet-1 col-mobile-1">
+        <section><h2 id="beef">Beef</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dicta beatae voluptatibus veniam placeat 
+            iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, 
+            provident a ea!
+            </p>
+        
+        </section></div>
+    <div class="col-desk-1 col-tablet-2 col-mobile-1">
+        <section><h2 id="sushi">Sushi</h2>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Dicta beatae voluptatibus veniam placeat 
+            iure unde assumenda porro neque voluptate esse sit magnam facilis labore odit, 
+            provident a ea!
+            </p>
+           
+        
+        </section></div>
+
+
+
+</div>
+
+</body>
+</html> 
